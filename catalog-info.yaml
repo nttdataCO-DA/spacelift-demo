@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: spacelift-demo
+  description: "Repositorio de demostración con documentación asociada."
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: nttdataCO-DA/spacelift-demo
+    sonarqube.org/project-key: spacelift-demo
+  tags:
+    - markdown
+    - documentacion
+spec:
+  type: service
+  owner: nttdataco-da
+  lifecycle: production
+  system: discovery
